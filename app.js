@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require('cors')
 
-const port = process.env.PORT || 3000
+//const port = process.env.PORT || 3000
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
@@ -80,8 +80,8 @@ app.get('/ready',   function(req, res) {
     });
 })
 
-app.listen(port, () => {
-    console.log("Server successfully running on port - " +port);
+app.listen(8080, () => {
+    console.log("Server successfully running on port - " + 8080);
 })
 
 
